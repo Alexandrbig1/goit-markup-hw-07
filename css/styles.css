@@ -48,15 +48,13 @@ button {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:428px) {
   .container {
     width: 428px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -66,7 +64,7 @@ button {
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1158px) {
   .container {
     width: 1158px;
   }
@@ -121,7 +119,7 @@ button {
   margin-right: 76px;
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .head-logo {
     margin-right: 122px;
   }
@@ -132,10 +130,6 @@ button {
 }
 
 @media screen and (max-width:767px) {
-
-  .head {
-    margin-bottom: 77px;
-  }
 
   .head-logo {
     margin-right: 0;
@@ -210,6 +204,12 @@ button {
 
 .active {
   color: #404BBF;
+}
+
+@media screen and (max-width:767px) {
+  .mobile-nav-link.active {
+    color: #404BBF;
+  }
 }
 
 .head-link.active::after {
@@ -289,7 +289,7 @@ button {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .head-contacts {
     height: 14px;
   }
@@ -323,7 +323,9 @@ button {
 
   .mobile-menu-container {
     position: relative;
-    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding-top: 80px;
     padding-bottom: 40px;
   }
@@ -347,14 +349,16 @@ button {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-left: 25px;
   }
 
   .mobile-address-menu {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    margin-top: 284px;
+    margin-top: auto;
     margin-bottom: 48px;
+    padding-left: 25px;
   }
 
   .mobile-contacts {
@@ -377,8 +381,9 @@ button {
   .mobile-social-menu {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 56px;
+    padding-left: 25px;
   }
 
   .mobile-social-items {
@@ -443,6 +448,14 @@ button {
   background-size: cover;
 }
 
+@media screen and (max-width:767px) {
+  .hero {
+    max-width: 428px;
+    height: 432px;
+    padding: 112px 0;
+  }
+}
+
 .hero-main {
   font-weight: 700;
   font-size: 56px;
@@ -461,7 +474,7 @@ button {
     font-size: 36px;
     line-height: 1.11;
     margin-bottom: 72px;
-    width: 320px;
+    max-width: 320px;
     height: 80px;
   }
 }
@@ -805,29 +818,13 @@ button {
 
 .send-btn-container {}
 
-/* --- under hero empty frame --- */
-
-@media screen and (max-width:767px) {
-  .under-hero-container {
-    width: 1px;
-    height: 1px;
-    border: 0;
-    padding: 0;
-    margin: 77px auto;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-}
-
 /* ----- about ----- */
 
 .about {
   padding: 120px 0;
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (max-width:1157px) {
   .about {
     padding: 96px 0;
   }
@@ -845,7 +842,7 @@ button {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .about-menu {
     flex-wrap: wrap;
   }
@@ -862,7 +859,7 @@ button {
   align-items: center;
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (max-width:1157px) {
   .about-icon-container {
     display: none;
   }
@@ -911,11 +908,11 @@ button {
   }
 
   .about-items:last-child {
-    margin-bottom: 77px;
+    margin-bottom: 0;
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .about-items {
     width: 356px;
   }
@@ -927,7 +924,7 @@ button {
   padding-bottom: 120px;
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (max-width:1157px) {
   .digital {
     display: none;
   }
@@ -962,7 +959,7 @@ button {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .team {
     padding: 96px 0;
   }
@@ -990,7 +987,7 @@ button {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .team-menu {
     flex-wrap: wrap;
     justify-content: center;
@@ -1090,7 +1087,7 @@ button {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .customers {
     padding: 96px 0;
   }
@@ -1122,7 +1119,7 @@ button {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .customers-menu {
     flex-wrap: wrap;
     row-gap: 72px;
@@ -1182,7 +1179,7 @@ button {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .footer {
     padding: 96px 0;
   }
@@ -1204,7 +1201,7 @@ button {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .footer-container {
     flex-wrap: wrap;
     width: 100%;
@@ -1221,11 +1218,10 @@ button {
   .footer-logo-container {
     margin-right: 0;
     margin-bottom: 72px;
-    text-align: center;
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .footer-logo-container {
     margin-right: 24px;
   }
@@ -1244,6 +1240,13 @@ button {
   text-decoration: none;
   display: inline-block;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width:767px) {
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-studio {
@@ -1355,7 +1358,7 @@ button {
   color: var(--main-color);
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .footer-label {
     opacity: 0.3;
   }
@@ -1444,7 +1447,7 @@ button {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .features {
     padding: 96px 0;
   }
@@ -1512,7 +1515,7 @@ button {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .app-menu {
     row-gap: 72px;
     column-gap: 24px;
@@ -1558,7 +1561,7 @@ button {
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .app-image {
     width: 356px;
   }
