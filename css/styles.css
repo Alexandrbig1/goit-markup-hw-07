@@ -193,13 +193,18 @@ button {
 
 .head-link {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
   color: var(--title-color);
   padding: 24px 0;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width:768px) and (max-width:1157px) {
+  .head-link {
+    font-size: 16px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
 }
 
 .active {
@@ -232,7 +237,7 @@ button {
   margin-left: auto;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .head-address {
     display: flex;
   }
@@ -243,7 +248,7 @@ button {
   gap: 40px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1157px) {
   .head-address-menu {
     flex-direction: column;
     justify-content: center;
@@ -263,9 +268,6 @@ button {
 
 .head-contacts {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
   color: var(--text-color);
   font-style: normal;
   display: flex;
@@ -278,21 +280,19 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width:768px) and (max-width:1157px) {
+  .head-contacts {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    padding: 0;
+    height: 14px;
+  }
+}
+
 .head-contacts:hover,
 .head-contacts:focus {
   color: #404bbf;
-}
-
-@media screen and (min-width:768px) {
-  .head-contacts {
-    padding: 0;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1157px) {
-  .head-contacts {
-    height: 14px;
-  }
 }
 
 /* ----- MOBILE MENU ----- */
@@ -453,6 +453,13 @@ button {
     max-width: 428px;
     height: 432px;
     padding: 112px 0;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1157px) {
+  .hero {
+    padding: 112px 0;
+    height: 436px;
   }
 }
 
@@ -883,6 +890,14 @@ button {
   }
 }
 
+@media screen and (min-width:768px) and (max-width:1157px) {
+  .about-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+}
+
 .about-text {
   font-weight: 400;
   font-size: 16px;
@@ -892,6 +907,12 @@ button {
 }
 
 @media screen and (max-width:767px) {
+  .about-text {
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1157px) {
   .about-text {
     font-weight: 500;
   }
