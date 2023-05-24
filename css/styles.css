@@ -1248,6 +1248,7 @@ screen and (min-resolution: 2dppx) and (min-width:1158px) {
 
 @media screen and (max-width:767px) {
   .footer-container {
+    max-width: 428px;
     width: 100%;
     padding: 96px 15px;
   }
